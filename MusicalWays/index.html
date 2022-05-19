@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MusicalWays.RB</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="https://musicalways.m-n-g.repl.co/favicon.ico" />
+  <h1><p style="color:#554ac3";"font-family:'Tahoma'"> MusicalWays</h1></p>
+</head>
+<body>
+		<!-- Blue Playlist Container -->
+		<div id="blue-playlist-container">
+
+			<!-- Amplitude Player -->
+			<div id="amplitude-player">
+
+				<!-- Left Side Player -->
+				<div id="amplitude-left">
+					<img data-amplitude-song-info="cover_art_url" class="album-art" height="550" width="auto"/>
+          <div class="amplitude-visualization" id="large-visualization">
+
+            </div>
+					<div id="player-left-bottom">
+						<div id="time-container">
+							<span class="current-time">
+								<span class="amplitude-current-minutes" ></span>:<span class="amplitude-current-seconds"></span>
+							</span>
+							<div id="progress-container">
+								<div class="amplitude-wave-form"></div>
+                <input type="range" class="amplitude-song-slider"/>
+								<progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+								<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+							</div>
+							<span class="duration">
+								<span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+							</span>
+						</div>
+
+						<div id="control-container">
+							<div id="repeat-container">
+								<div class="amplitude-repeat" id="repeat"></div>
+								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+							</div>
+
+							<div id="central-control-container">
+								<div id="central-controls">
+									<div class="amplitude-prev" id="previous"></div>
+									<div class="amplitude-play-pause" id="play-pause"></div>
+									<div class="amplitude-next" id="next"></div>
+								</div>
+							</div>
+
+							<div id="volume-container">
+								<div class="volume-controls">
+									<div class="amplitude-mute amplitude-not-muted"></div>
+									<input type="range" class="amplitude-volume-slider"/>
+									<div class="ms-range-fix"></div>
+								</div>
+								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
+							</div>
+						</div>
+
+						<div id="meta-container">
+							<span data-amplitude-song-info="name" class="song-name"></span>
+
+							<div class="song-artist-album">
+								<span data-amplitude-song-info="artist"></span>
+								<span data-amplitude-song-info="album"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Left Side Player -->
+
+			</div>
+			<!-- End Amplitdue Player -->
+    <br><br><h4 style="color:#554ac3">What songs do you want to be added to the playlist ("song - artist"):</h4>
+    <p style="color:#554ac3">Your Answer:<input id="answer"type="text" style="margin-left:20px" placeholder="start typing here"><div id="send"><button onClick="qom()">Send</button></div></p>
+		
+		<!--
+			Include UX functions JS
+
+			NOTE: These are for handling things outside of the scope of AmplitudeJS
+		-->
+		<script type="text/javascript" src="js/functions.js"></script>
+	</body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
