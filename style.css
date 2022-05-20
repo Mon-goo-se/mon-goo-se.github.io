@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #F8F005;
+  background-color: #000000;
 }
 
 button, button::after {
